@@ -1,0 +1,56 @@
+To create country, city, hotel, amneti, contact use this payload with mehthod post.
+
+{
+	"countryId": 0,
+	"countryName": "India",
+	"listOfCities": [{
+		"cityId": null,
+		"name": "Bangalore",
+		"listOfHotel": [{
+			"hotelId": null,
+			"hotelName": "Taj",
+			"description": "3 star",
+			"address": "Bangalore",
+			"lattitude": "100",
+			"longitude": "200",
+			"active":"Y",
+			"listOfContacts": [{
+				"contactId": null,
+				"contactName": "Hareram"
+			}],
+			"listOfAmneties": [{
+				"amnetiId": null,
+				"amnetiName": "Fan"
+			}]
+		}]
+	}]
+}
+
+To update the hotel details use this bellow payload.
+
+{
+	"hotelId": 3,
+	"hotelName": "Taj Mahal",
+	"description": "3 start",
+	"address": "Bangalore",
+	"lattitude": "100",
+	"longitude": "200",
+	"active": "Y",
+	"listOfContacts": [{
+		"contactId": 5,
+		"contactName": "8951892662"
+	}],
+	"listOfAmneties": [{
+		"amnetiId": 4,
+		"amnetiName": "Fan"
+	}]
+}
+
+To Delete the amneti of the hotel use bellow payload.
+
+{
+		"amnetiId": 4,
+		"amnetiName": "Fan"
+	}
+	
+	
